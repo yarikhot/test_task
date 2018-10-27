@@ -1,0 +1,46 @@
+.App {
+    text-align: left;
+}
+
+.App-header {
+    background-color: #282c34;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    &__btn,h1 {
+        margin: 15px 40px!important;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 125px);
+    grid-gap: 50px;
+    padding: 50px;
+    &__map {
+        position: relative;
+    }
+}
+
+.map__btn {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal {
+    position: absolute;
+    background-color: #000;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.path-item {
+    display: flex;
+    align-items: center;
+}
